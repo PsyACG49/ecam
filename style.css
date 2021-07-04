@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body{
+    background: rgb(0, 12, 12);
+}
+
+/*Estilos de header*/
+.main-header{
+    margin: auto;
+    width: 80%;
+    height: 12rem;
+    background: rgb(0, 12, 12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-img{
+    padding-left: 1rem;
+    
+}
+
+.text-logo{
+    margin-left: 1rem;
+    color: bisque;
+    margin-top: 3.5rem;
+    float: right;
+}
+
+.icono-ecam{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50px;
+}
+
+.list-head{
+    width: 7rem;
+    height: 3rem;
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 2rem;
+    background-color: rgb(0, 12, 12);
+}
+
+.link-head{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: bisque;
+    
+}
+
+/*Estilos main*/
+.container-main{
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    
+}
+
+/*estilos seccion de carrusel*/
+.corousel{
+    width: 80%;
+    padding: 3rem;
+    position: relative;
+}
+
+.carousel-container{
+    white-space: nowrap;
+    margin: auto;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-title{
+    text-align: center;
+    color: bisque;
+    font-size: 2rem;
+    height: 4rem;
+    margin: 2rem;
+}
+
+.carousel-item{
+    background-color: blueviolet;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-right: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms;
+    transform-origin: center left;
+    position: relative;
+}
+
+.carousel-item:hover ~ .carousel-item{
+    transform: translate3d(100px, 0, 0);
+
+}
+
+.carousel-container:hover .carousel-item{
+    opacity: 0.3;
+
+}
+
+.carousel-container:hover .carousel-item:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.carousel-item-img{
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.carousel-item-details{
+    background: linear-gradient(to top, rgba(0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    font-size: 1rem;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 18rem;
+}
+
+.carousel-item-details:hover{
+    opacity: 1;
+}
+
+.carousel-item-descrip{
+    color: bisque;
+}
+
+/*seccion Nosostros*/
+.container-nosotros{
+    width: 80%;
+    margin: auto;
+}
+
+.title-sec-nosotros{
+    text-align: center;
+    font-size: 2.5rem;
+    color: bisque;
+}
+
+.container-mision{
+    height: 30rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-mision-text{
+    width: 25%;
+    height: 25rem;
+    /*background-color: blueviolet;*/
+    text-align: center;
+    color: bisque;
+}
+
+.container-mision-text h3{
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+
+.container-mision-text p{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.container-mision-img{
+    width: 50%;
+    height: 25rem;
+    /*background-color: blueviolet;*/
+
+}
+
+.mision-img{
+    width: 100%;
+    height: 25rem;
+    border-radius: 5px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.container-vision{
+    height: 30rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.container-vision-img{
+    width: 50%;
+    height: 25rem;
+}
+
+.vision-img{
+    width: 100%;
+    height: 25rem;
+    border-radius: 5px;
+    object-fit: cover;
+    margin: auto; 
+}
+
+.container-vision-text{
+    width: 25%;
+    height: 25rem;
+    text-align: center;
+    color: bisque;
+
+}
+
+.container-vision-text h3{
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+
+.container-vision-text p{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.container-servicios{
+    width: 80%;
+    margin: auto;
+}
+
+.title-servicios{
+    height: 4rem;
+    font-size: 2rem;
+    margin: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    color: bisque;
+}
+
+.container-servicios-galery{
+    width: 100%;
+    height: 30rem;
+    /*background-color: blueviolet;*/
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+.servicios-galery{
+    width: 50%;
+    height: 30rem;
+    position: relative; 
+}
+
+.servicios-text-galery{
+    width: 30%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: blueviolet;*/
+    color: bisque;
+}
+
+.slider__info{
+    color: bisque;
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    transition: opacity 5s;
+    opacity: 0;
+}
+
+
+
+.container-servicios-galery ul, li{
+    list-style: none;
+}
+
+.container-servicios-galery a{
+    text-decoration: none;
+    color: bisque;
+}
+
+.galery{
+    position: relative;
+    width: 100%;
+    height: 30rem;
+}
+
+.galery li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity 5s;
+}
+
+.galery li img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.galery li > img {
+    opacity: 1;
+}
+
+.galery li > div {
+    opacity: 1;
+}
+
+.galery li:target{
+    opacity: 1;
+}
+
+
+/*Seccion de contacto*/
+
+.seccion-contacto{
+    width: 80%;
+    margin: auto;
+}
+
+.seccion-contacto-title{
+    text-align: center;
+    color: beige;
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+
+.seccion-contact-prin{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 3rem;
+}
+
+.seccion-contactp__cont-map{
+    color: bisque;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 50%;
+}
+
+.seccion-contact__info{
+    color: bisque;
+    width: 25%;
+    font-size: 3rem;
+
+}
+
+.seccion-contact__info li i{
+    margin-right: 1rem;
+}
+
+.seccion-contact__info li {
+    margin-bottom: 2rem;
+}
+
+/*Estilos footer*/
+.container-footer{
+    width: 80%;
+    height: 8rem;
+    margin: auto;
+    background-color: gray;
+}
+
+
